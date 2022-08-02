@@ -3,6 +3,7 @@ const {
   checkIfAnyPokemonWeighsLessThan,
   findByName,
   filterByType,
+  checkMinBaseExperience
 } = require("..");
 
 const pokemon = require("../pokemon");
@@ -158,6 +159,25 @@ describe("filterByType()", () => {
     const type = "psychic";
     const actual = filterByType(pokemon, type);
     const expected = [];
+    expect(actual).toEqual(expected);
+  });
+});
+
+describe("checkMinBaseExperience()", () => {
+  test("should use the `.every()` method", () => {
+    const text = checkMinBaseExperience.toString();
+    expect(text).toMatch(/\.every\(.*\)/s);
+  });
+  test("should return true if all pokemon have a minimum base_experience of at least 20", () => {
+    const minBaseExperience = 20;
+    const actual = checkMinBaseExperience(pokemon, minBaseExperience);
+    const expected = true;
+    expect(actual).toEqual(expected);
+  });
+  test("should return false if all movies have a minimum metascore of at least 40", () => {
+    const minBaseExperience = 40;
+    const actual = checkMinBaseExperience(pokemon, minBaseExperience);
+    const expected = false;
     expect(actual).toEqual(expected);
   });
 });
