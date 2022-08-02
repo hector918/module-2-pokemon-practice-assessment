@@ -1,0 +1,16 @@
+{
+  "name": "pokemon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --runInBand __tests__/*.test.js",
+    "watch": "jest --watch-all __tests__/*.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.3",
+    "pokedex-promise-v2": "^4.0.0"
+  }
+}
