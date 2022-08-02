@@ -1,4 +1,4 @@
-# Mid-Module Two Assessment
+# Practice Assessment
 
 This challenge is designed to assess the JavaScript skills you have gained so far.
 
