@@ -55,25 +55,25 @@ function getAllPokemonNames() {}
  *  checkIfAnyPokemonWeighsLessThan(pokemon, 18);
  *  //> false
  */
-function checkIfAnyPokemonWeighsLessThan(pokemon, weight = 100) {}
+function checkIfAnyPokemonWeighsLessThan() {}
 
 /**
- * findById()
+ * findByName()
  * -----------------------------
- * Returns a pokemon object from an array of objects based on the ID. If the ID does not match any pokemon, return `null`.
+ * Returns a pokemon object from an array of objects based on the name. If the name does not match any pokemon, return `null`.
  * @param {Object[]} pokemon - An array of pokemon. See the `pokemon.js` file for an example of this array.
- * @param {string} id - A unique `pokeId`.
- * @returns {Object|null} The pokemon object with the matching `pokeId` or null.
+ * @param {string} name - A unique `name`.
+ * @returns {Object|null} The pokemon object with the matching `name` or null.
  *
  * NOTE: You must use the `.find()` method.
  * 
  * EXAMPLE:
- *  findById(pokemon, 36);
+ *  findByName(pokemon, 36);
  *  //> {
       // clefable
     };
  */
-function findById(pokemon, id) {}
+function findByName() {}
 
 /**
  * filterByType()
@@ -99,11 +99,11 @@ function findById(pokemon, id) {}
  *  filterByType(pokemon, "psychic")
  *  //> []
  */
-function filterByType(pokemon, pokeType) {}
+function filterByType() {}
 
 module.exports = {
   getAllPokemonNames,
   checkIfAnyPokemonWeighsLessThan,
-  findById,
+  findByName,
   filterByType,
 };

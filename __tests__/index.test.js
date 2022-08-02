@@ -1,7 +1,7 @@
 const {
   getAllPokemonNames,
   checkIfAnyPokemonWeighsLessThan,
-  findById,
+  findByName,
   filterByType,
 } = require("..");
 
@@ -86,26 +86,26 @@ describe("checkIfAnyPokemonWeighsLessThan()", () => {
   });
 });
 
-describe("findById()", () => {
+describe("findByName()", () => {
   test("should use the `.find()` method", () => {
-    const text = findById.toString();
+    const text = findByName.toString();
     expect(text).toMatch(/\.find\(.*\)/s);
   });
   test("should return the entire poke based on the poke id", () => {
     const id = 36;
-    const actual = findById(pokemon, id);
+    const actual = findByName(pokemon, id);
     expect(actual.pokeId).toEqual(36);
     expect(actual.name).toEqual("clefable");
   });
   test("should dynamically change depending on the poke id inputted", () => {
     const id = 37;
-    const actual = findById(pokemon, id);
+    const actual = findByName(pokemon, id);
     expect(actual.pokeId).toEqual(37);
     expect(actual.name).toEqual("vulpix");
   });
   test("should return `null` if the pokemon cannot be found", () => {
     const id = 41;
-    const actual = findById(pokemon, id);
+    const actual = findByName(pokemon, id);
     const expected = null;
     expect(actual).toEqual(expected);
   });

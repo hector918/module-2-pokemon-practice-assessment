@@ -97,6 +97,7 @@ The following learning objectives from Module 2 will be assessed in this assessm
 - Use `.map()` to solve code problems.
 - Use `.filter()` to solve code problems.
 - Use `.find()` to solve code problems.
+- Use `.every()` to solve code problems.
 - Use `.some()` to solve code problems.
 - Throw errors with the throw keyword.
 - Add default parameters to functions.
